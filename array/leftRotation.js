@@ -56,9 +56,9 @@ console.log(array);
 let k = 7;
 k = k % array.length;
 
-reverse(0, k - 1);
-reverse(k, array.length - 1);
-reverse(0, array.length - 1);
+reverse(0, k - 1); // right rotation reverse(0, array.length - 1)
+reverse(k, array.length - 1); // reverse(0, k - 1)
+reverse(0, array.length - 1); // reverse(k, array.length - 1)
 
 function reverse(i, j) {
   while (i < j) {
